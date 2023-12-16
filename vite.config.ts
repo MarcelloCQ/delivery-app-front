@@ -7,7 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist', // Carpeta de salida, ajusta según sea necesario
   },
-  base: '/nombre-de-tu-repositorio/', // Ajusta esto según tu repositorio en GitHub
+  base: '/delivery-app-front/', // Ajusta esto según tu repositorio en GitHub
   esbuild: {
     jsxFactory: 'React.createElement',
     jsxFragment: 'React.Fragment',
