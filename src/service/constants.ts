@@ -1,0 +1,1 @@
+export const BASE_URL: string = 'https://de-dnv5.onrender.com/api/v1/';
