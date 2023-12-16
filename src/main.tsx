@@ -3,7 +3,7 @@ import { RouterProvider } from 'react-router-dom'
 import router from './App'
 import { Provider } from 'react-redux'
 import './index.css'
-import { store } from './redux/stroe'
+import { store } from './redux/store'
 import 'ldrs/ring'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

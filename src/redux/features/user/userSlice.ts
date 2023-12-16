@@ -16,9 +16,10 @@ export const UserKey = 'user';
 
 export const userSlice = createSlice({
   name: 'user',
-  initialState: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : initialState,
+  initialState: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user') as string) : initialState,
   reducers: {
     createUser: (state, action) => {
+      console.log(state);
       persistLocalStorage(UserKey, action.payload);
       return action.payload;
     },

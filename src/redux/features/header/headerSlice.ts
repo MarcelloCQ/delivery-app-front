@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 
 export interface HeaderState {
   isActive: boolean;
@@ -12,7 +12,7 @@ export const userSlice = createSlice({
   name: 'header',
   initialState,
   reducers: {
-    activeHeader: (state, action) => {
+    activeHeader: (state, action: PayloadAction<boolean>) => {
       state.isActive = action.payload;
     },
   }
