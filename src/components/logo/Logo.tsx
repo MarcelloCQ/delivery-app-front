@@ -4,7 +4,8 @@ const Logo = () => {
   return (
     <img
       className='logo'
-      src='/logo.jpg'
+      src='./logo.jpg'
+      alt='logo'
     />
   )
 }

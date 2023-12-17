@@ -7,6 +7,7 @@ import RoutesWithNotFoundAlternative from './utils/RoutesWithNotFoundAlternative
 import Register from './pages/public/register/Register'
 import Home from './pages/private/Home'
 import { privateRoutes, publicRoutes } from './routes/routes.service'
+import RecuperarContrasenia from './pages/public/recuperarContrasenia/RecuperarContrasenia'
 
 const routes = createHashRouter([
   {
@@ -14,7 +15,7 @@ const routes = createHashRouter([
     element: <Login/>,
   },
   {
-    path: `${privateRoutes.PRIVATE}`,
+    path: `${privateRoutes.PRIVATE}/*`,
     element: <Private />
   },
   {
@@ -24,6 +25,10 @@ const routes = createHashRouter([
   {
     path: `${privateRoutes.HOME}`,
     element: <Home />,
+  },
+  {
+    path: `${publicRoutes.RECUPERARCONTRASENIA}`,
+    element: <RecuperarContrasenia />,
   },
   {
     path: '*',

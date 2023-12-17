@@ -6,13 +6,15 @@ type PrivateRoutes = {
 type PublicRoutes = {
   LOGIN: string;
   REGISTER: string;
+  RECUPERARCONTRASENIA: string;
 }
 export const privateRoutes: PrivateRoutes = {
-  PRIVATE: 'private',
+  PRIVATE: '/private',
   HOME: '/home',
 }
 
 export const publicRoutes: PublicRoutes = {
   LOGIN: '/',
   REGISTER: '/registro',
+  RECUPERARCONTRASENIA: '/recuperarcontrasenia',
 }

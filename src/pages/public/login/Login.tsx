@@ -3,7 +3,6 @@ import { postLogin } from "../api/service";
 // import { LoginPost } from "../api/post.interface";
 import { useState } from "react";
 import { privateRoutes, publicRoutes } from "../../../routes/routes.service";
-import Header from "../../../components/header/Header";
 import { useDispatch } from 'react-redux'
 import { createUser } from "../../../redux/features/user/userSlice";
 import { activeHeader } from "../../../redux/features/header/headerSlice";
@@ -50,7 +49,6 @@ const Login = () => {
   
   return (
     <div>
-      <Header />
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
@@ -82,7 +80,7 @@ const Login = () => {
                   Contraseña
                 </label>
                 <div className="text-sm">
-                  <NavLink to="#" className="font-semibold text-red-600 hover:text-red-500">
+                  <NavLink to={publicRoutes.RECUPERARCONTRASENIA} className="font-semibold text-red-600 hover:text-red-500">
                     Olvidaste tu contraseña?
                   </NavLink>
                 </div>
